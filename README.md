@@ -1,4 +1,4 @@
 # Proyecto.Inflaces
 Proyecto Final
-##Descripción
+## Descripción
 Gestión de Stock, Fabricación, Compra y Venta.
