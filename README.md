@@ -1,4 +1,4 @@
 # Proyecto.Inflaces
 Proyecto Final
 ## Descripción
-Gestión de Stock, Fabricación, Compra y Venta.
+Sistema de Gestión de Venta, Stock y Fabricación.
