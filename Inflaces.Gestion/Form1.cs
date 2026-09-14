@@ -12,9 +12,9 @@ using Negocio;// Para llamar al cerebro (Negocio)
 
 namespace Inflaces.Gestion
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
         }
@@ -23,6 +23,11 @@ namespace Inflaces.Gestion
         {
             
             
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

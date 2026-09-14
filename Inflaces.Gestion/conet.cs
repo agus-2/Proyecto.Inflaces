@@ -10,7 +10,7 @@ namespace Inflaces.Gestion
 {
     public class Conexion
     {
-        private string cadenaConexion = "Server=TINA\\SQLEXPRESS; Database=MundoInflacesBD; Integrated Security=True;";
+        private string cadenaConexion = "DESKTOP-6AAK0II\\SQLEXPRESS; Database=MundoInflacesBD; Integrated Security=True;";
         public SqlConnection ObtenerConexion()
         {
             SqlConnection conexion = new SqlConnection(cadenaConexion);
