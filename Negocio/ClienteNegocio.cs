@@ -9,7 +9,14 @@ using Entidades; // usamos el molde de la Capa de Entidades
 namespace Negocio
 {
     //contiene las reglas de negocio y la conexion a sql -- se verifica las reglas y se pasan los datos se guardan en la base de datos
-    public class Class1
+    public class ClienteNegocio
     {
+        public string Alta_Cliente(ClienteNegocio nuevoCliente) {
+            //validar reglas del negocio
+            if (string.IsNullOrEmpty(nuevoCliente.nombre_completo)) {
+                return "Error: El nombre completo del cliente es obligatorio.";
+            }
+            if (nuevoCliente.dni.length < 7) ;
+        }
     }
 }
