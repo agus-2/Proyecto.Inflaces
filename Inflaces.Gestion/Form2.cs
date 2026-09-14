@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Inflaces.Gestion
 {
-    public partial class Form2 : Form
+    public partial class Login : Form
     {
-        public Form2()
+        public Login()
         {
             InitializeComponent();
         }
