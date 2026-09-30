@@ -14,9 +14,23 @@ namespace Inflaces.Gestion
 {
     public partial class FormularioCliente : Form
     {
+        private int idClienteEditar = 0;
         public FormularioCliente()
         {
             InitializeComponent();
+        }
+        public FormularioCliente(Clientes cliente)
+        {
+            InitializeComponent();
+
+            idClienteEditar = cliente.id_cliente;
+            txtnombre_completo.Text = cliente.nombre_completo;
+            txtcuit.Text = cliente.cuit;
+            chkMayorist.Checked = cliente.tipo_cliente;
+            txttelefono.Text = cliente.telefono;
+            txtemail.Text = cliente.email;
+            txtdireccion.Text = cliente.direccion;
+            btnAddCliente.Text = "Modificar cliente";
         }
 
         private void btnAddCliente_Click(object sender, EventArgs e)
@@ -36,10 +50,20 @@ namespace Inflaces.Gestion
 
                 //llamo al metodo en la capa de negocio
                 ClienteNegocio negocio = new ClienteNegocio();
-                string respuesta = negocio.RegistrarCliente(clienteEmpaquetado);
+                string respuesta;
 
-                //muestra resultado al usuario y limpia pantalla si todo esta bien
+                if (idClienteEditar == 0)
+                {
+                    respuesta = negocio.RegistrarCliente(clienteEmpaquetado);
+                }
+                else
+                {
+                    clienteEmpaquetado.id_cliente = idClienteEditar;
+                    respuesta = negocio.ModificarCliente(clienteEmpaquetado);
+                }
+
                 MessageBox.Show(respuesta);
+
                 if (respuesta.StartsWith("Éxito"))
                 {
                     LimpiarCampos();
@@ -58,5 +82,13 @@ namespace Inflaces.Gestion
             txtemail.Clear();
             txtdireccion.Clear(); 
         }
+
+        private void btnListaClientes_Click(object sender, EventArgs e)
+        {
+            FormularioListaClientes formulario = new FormularioListaClientes();
+            formulario.ShowDialog();
+        }
+
+      
     }
 }

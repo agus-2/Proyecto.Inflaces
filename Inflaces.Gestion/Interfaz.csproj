@@ -159,8 +159,47 @@
     <Compile Include="FormularioCliente.Designer.cs">
       <DependentUpon>FormularioCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularioListaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioListaClientes.Designer.cs">
+      <DependentUpon>FormularioListaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioListarProveedores1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioListarProveedores1.Designer.cs">
+      <DependentUpon>FormularioListarProveedores1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioMenu.Designer.cs">
+      <DependentUpon>FormularioMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioProveedor.Designer.cs">
+      <DependentUpon>FormularioProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormularioCliente.resx">
+      <DependentUpon>FormularioCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioListaClientes.resx">
+      <DependentUpon>FormularioListaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioListarProveedores1.resx">
+      <DependentUpon>FormularioListarProveedores1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioMenu.resx">
+      <DependentUpon>FormularioMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioProveedor.resx">
+      <DependentUpon>FormularioProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
