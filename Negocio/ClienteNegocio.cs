@@ -36,7 +36,7 @@ namespace Negocio
 
                     using(SqlCommand cmd = new SqlCommand(query, con))
                     {
-                        cmd.Parameters.AddWithValue("@nombre_completo", nombre_completo);
+                        cmd.Parameters.AddWithValue("@nombre_completo", nuevoCliente.nombre_completo);
                         cmd.Parameters.AddWithValue("@cuit", nuevoCliente.cuit);
                         cmd.Parameters.AddWithValue("@tipo_cliente", nuevoCliente.tipo_cliente);
                         cmd.Parameters.AddWithValue("@telefono", (object)nuevoCliente.telefono ?? DBNull.Value);

@@ -13,7 +13,7 @@ namespace Entidades
         public string cuit { get; set; }
         public bool tipo_cliente { get; set; } //true= Mayorista - false=Minorista
         public string email { get; set; }
-        public int telefono { get; set; }
+        public string telefono { get; set; }
         public string direccion { get; set; }
     }
 }
