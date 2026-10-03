@@ -7,8 +7,14 @@ using System.Threading.Tasks;
 namespace Entidades
 {
     //propiedades de la entidad - coinciden con las tablas de la base de datos -- molde de datos puro
-    public class Clientes
+    public class Materia_Prima
     {
-       
+        public int id_materia_prima { get; set; }
+        public string nombre { get; set; } 
+        public string descripcion { get; set; }
+        public int stock { get; set; }
+
+
+
     }
 }
