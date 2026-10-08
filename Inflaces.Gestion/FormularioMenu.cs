@@ -28,6 +28,24 @@ namespace Inflaces.Gestion
             FormularioProveedor formulario = new FormularioProveedor();
             formulario.ShowDialog();
         }
+
+        private void btnEmpleados_Click(object sender, EventArgs e)
+        {
+            FormularioEmpleado formulario = new FormularioEmpleado();
+            formulario.ShowDialog();
+        }
+
+        private void btnMateriaPrima_Click(object sender, EventArgs e)
+        {
+            FormularioMateriaPrima formulario = new FormularioMateriaPrima();
+            formulario.ShowDialog();
+        }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            FormularioProducto formulario = new FormularioProducto();
+            formulario.ShowDialog();
+        }
     }
 }
    
