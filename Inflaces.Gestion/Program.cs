@@ -16,10 +16,7 @@ namespace Inflaces.Gestion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
-            Application.Run(new FormularioMenu());
-=======
->>>>>>> origin/main
+            Application.Run(new FormularioLogin());
         }
     }
 }
