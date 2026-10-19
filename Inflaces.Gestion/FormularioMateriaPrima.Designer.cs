@@ -41,56 +41,56 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(78, 179);
+            this.label1.Location = new System.Drawing.Point(70, 199);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 18);
+            this.label1.Size = new System.Drawing.Size(50, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Stock";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(78, 304);
+            this.label2.Location = new System.Drawing.Point(70, 338);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 18);
+            this.label2.Size = new System.Drawing.Size(92, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Descripción";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(78, 69);
+            this.label3.Location = new System.Drawing.Point(70, 81);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 18);
+            this.label3.Size = new System.Drawing.Size(65, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nombre";
             // 
             // textNombre
             // 
-            this.textNombre.Location = new System.Drawing.Point(56, 122);
+            this.textNombre.Location = new System.Drawing.Point(50, 136);
             this.textNombre.Name = "textNombre";
-            this.textNombre.Size = new System.Drawing.Size(100, 25);
+            this.textNombre.Size = new System.Drawing.Size(175, 26);
             this.textNombre.TabIndex = 3;
             // 
             // textStock
             // 
-            this.textStock.Location = new System.Drawing.Point(56, 228);
+            this.textStock.Location = new System.Drawing.Point(50, 253);
             this.textStock.Name = "textStock";
-            this.textStock.Size = new System.Drawing.Size(100, 25);
+            this.textStock.Size = new System.Drawing.Size(90, 26);
             this.textStock.TabIndex = 4;
             // 
             // textDescripcion
             // 
-            this.textDescripcion.Location = new System.Drawing.Point(56, 355);
+            this.textDescripcion.Location = new System.Drawing.Point(50, 394);
             this.textDescripcion.Name = "textDescripcion";
-            this.textDescripcion.Size = new System.Drawing.Size(100, 25);
+            this.textDescripcion.Size = new System.Drawing.Size(200, 26);
             this.textDescripcion.TabIndex = 5;
             // 
             // btnAgregarMateriaPrima
             // 
-            this.btnAgregarMateriaPrima.Location = new System.Drawing.Point(645, 122);
+            this.btnAgregarMateriaPrima.Location = new System.Drawing.Point(520, 136);
             this.btnAgregarMateriaPrima.Name = "btnAgregarMateriaPrima";
-            this.btnAgregarMateriaPrima.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarMateriaPrima.Size = new System.Drawing.Size(128, 35);
             this.btnAgregarMateriaPrima.TabIndex = 6;
             this.btnAgregarMateriaPrima.Text = "Agregar Materia Prima";
             this.btnAgregarMateriaPrima.UseVisualStyleBackColor = true;
@@ -98,9 +98,9 @@
             // 
             // btnVerMateriasPrimas
             // 
-            this.btnVerMateriasPrimas.Location = new System.Drawing.Point(645, 265);
+            this.btnVerMateriasPrimas.Location = new System.Drawing.Point(520, 302);
             this.btnVerMateriasPrimas.Name = "btnVerMateriasPrimas";
-            this.btnVerMateriasPrimas.Size = new System.Drawing.Size(75, 23);
+            this.btnVerMateriasPrimas.Size = new System.Drawing.Size(128, 34);
             this.btnVerMateriasPrimas.TabIndex = 7;
             this.btnVerMateriasPrimas.Text = "Ver Materias Primas";
             this.btnVerMateriasPrimas.UseVisualStyleBackColor = true;
@@ -108,9 +108,9 @@
             // 
             // FormularioMateriaPrima
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(720, 500);
             this.Controls.Add(this.btnVerMateriasPrimas);
             this.Controls.Add(this.btnAgregarMateriaPrima);
             this.Controls.Add(this.textDescripcion);

@@ -150,7 +150,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormularioComprobanteCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioComprobanteCompra.Designer.cs">
+      <DependentUpon>FormularioComprobanteCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="conet.cs" />
+    <Compile Include="FormularioFabricacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioFabricacion.Designer.cs">
+      <DependentUpon>FormularioFabricacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioAgregarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioAgregarProductos.Designer.cs">
+      <DependentUpon>FormularioAgregarProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +229,12 @@
     <Compile Include="FormularioMenu.Designer.cs">
       <DependentUpon>FormularioMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularioPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioPedidos.Designer.cs">
+      <DependentUpon>FormularioPedidos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,6 +249,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormularioAgregarProductos.resx">
+      <DependentUpon>FormularioAgregarProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormularioEmpleado.resx">
       <DependentUpon>FormularioEmpleado.cs</DependentUpon>
     </EmbeddedResource>
@@ -254,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioMenu.resx">
       <DependentUpon>FormularioMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioPedidos.resx">
+      <DependentUpon>FormularioPedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioProductos.resx">
       <DependentUpon>FormularioProductos.cs</DependentUpon>
