@@ -89,6 +89,9 @@ namespace Inflaces.Gestion
             formulario.ShowDialog();
         }
 
-      
+        private void FormularioCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
