@@ -32,7 +32,7 @@ namespace Inflaces.Gestion
             try
             {
                 dgvPedidos.DataSource = null;
-                dgvPedidos.DataSource = negocioPedido.ListarClientes();
+                dgvPedidos.DataSource = negocioPedido.ListarPedidos();
             }
             catch(Exception ex)
             {
@@ -149,7 +149,7 @@ namespace Inflaces.Gestion
             Pedidos pedidoSeleccionado = (Pedidos)dgvPedidos.CurrentRow.DataBoundItem;
             string nuevoEstado = cmbxEstPedido.SelectedItem.ToString();
 
-            string respuesta = negocioPedido.ActualizarEstadoPedido(pedidoSeleccionado.id_pedido, nuevoEstado);
+            string respuesta = negocioPedido.ActualizarEstadoPedido(pedidoSeleccionado, nuevoEstado);
             MessageBox.Show(respuesta);
 
             if (respuesta.StartsWith("Éxito"))

@@ -97,9 +97,9 @@
             // 
             // btnAgregarProductos
             // 
-            this.btnAgregarProductos.Location = new System.Drawing.Point(647, 300);
+            this.btnAgregarProductos.Location = new System.Drawing.Point(650, 278);
             this.btnAgregarProductos.Name = "btnAgregarProductos";
-            this.btnAgregarProductos.Size = new System.Drawing.Size(144, 60);
+            this.btnAgregarProductos.Size = new System.Drawing.Size(172, 66);
             this.btnAgregarProductos.TabIndex = 11;
             this.btnAgregarProductos.Text = "Agregar Productos";
             this.btnAgregarProductos.UseVisualStyleBackColor = true;
@@ -127,9 +127,9 @@
             // 
             // btnModificarEstado
             // 
-            this.btnModificarEstado.Location = new System.Drawing.Point(393, 422);
+            this.btnModificarEstado.Location = new System.Drawing.Point(386, 420);
             this.btnModificarEstado.Name = "btnModificarEstado";
-            this.btnModificarEstado.Size = new System.Drawing.Size(144, 60);
+            this.btnModificarEstado.Size = new System.Drawing.Size(151, 64);
             this.btnModificarEstado.TabIndex = 14;
             this.btnModificarEstado.Text = "Modificar Estado del Pedido";
             this.btnModificarEstado.UseVisualStyleBackColor = true;

@@ -92,5 +92,10 @@ namespace Inflaces.Gestion
             txtEmail.Clear();
             textDireccion.Clear();
         }
+
+        private void FormularioProveedor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

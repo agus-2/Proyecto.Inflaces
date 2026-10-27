@@ -26,6 +26,7 @@ namespace Negocio
             {
                 return "Error: El número de CUIT es obligatorio.";
             }
+            if (nuevoCliente.tipo_cliente) { }
             try
             {
                 using (SqlConnection con = new SqlConnection(cadenaConexion))
