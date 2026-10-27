@@ -29,26 +29,14 @@ namespace Inflaces.Gestion
         private void FormularioAgregarProductos_Load(object sender, EventArgs e)
         {
             // Mostramos los datos básicos del pedido en la pantalla
-            CargarGrillaDetalle();
+            CargarPedidoProducto();
             CargarProductos();
         }
 
-        private void ConfigurarLista() { 
-            
-        }
         //Carga los productos que ya contiene este pedido en el DataGridView
-        private void CargarGrillaDetalle()
+        private void CargarPedidoProducto()
         {
-            try
-            {
-                dgvDetalle.DataSource = null;
-                dgvDetalle.DataSource = negocioPedido.ObtenerDetallePedido(pedidoActual.id_pedido);
-
-
-            }
-            catch (Exception ex) {
-                MessageBox.Show("Error al cargar los productos del pedido: " + ex.Message);
-            }
+            dgvDetalle.DataSource = negocioPedidoProducto.ListarPedidoProducto();
         }
         private void CargarProductos() {
             try {
@@ -64,7 +52,6 @@ namespace Inflaces.Gestion
             }
         }
 
-        // 3\. Autocompleta el precio unitario y calcula el subtotal al elegir un producto
         private void cboProducto_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cboProducto.SelectedItem != null)
