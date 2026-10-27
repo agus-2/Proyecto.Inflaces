@@ -42,8 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clientes.cs" />
+    <Compile Include="Comprobante.cs" />
+    <Compile Include="DetalleComprobante.cs" />
     <Compile Include="Empleados.cs" />
+    <Compile Include="Fabricacion.cs" />
     <Compile Include="Materia_Prima.cs" />
+    <Compile Include="PedidoProducto.cs" />
+    <Compile Include="Pedidos.cs" />
+    <Compile Include="ProductoMatPrima.cs" />
     <Compile Include="Productos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Proveedores.cs" />

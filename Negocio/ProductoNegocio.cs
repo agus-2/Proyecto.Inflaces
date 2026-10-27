@@ -104,7 +104,7 @@ namespace Negocio
                 {
                     con.Open();
 
-                    string query = "DELETE FROM Productos WHERE id_producto = @id_producto";
+                    string query = @"DELETE FROM Productos WHERE id_producto = @id_producto";
 
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {

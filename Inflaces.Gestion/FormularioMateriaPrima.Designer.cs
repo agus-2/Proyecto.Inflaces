@@ -88,9 +88,9 @@
             // 
             // btnAgregarMateriaPrima
             // 
-            this.btnAgregarMateriaPrima.Location = new System.Drawing.Point(520, 136);
+            this.btnAgregarMateriaPrima.Location = new System.Drawing.Point(474, 136);
             this.btnAgregarMateriaPrima.Name = "btnAgregarMateriaPrima";
-            this.btnAgregarMateriaPrima.Size = new System.Drawing.Size(128, 35);
+            this.btnAgregarMateriaPrima.Size = new System.Drawing.Size(148, 83);
             this.btnAgregarMateriaPrima.TabIndex = 6;
             this.btnAgregarMateriaPrima.Text = "Agregar Materia Prima";
             this.btnAgregarMateriaPrima.UseVisualStyleBackColor = true;
@@ -98,9 +98,9 @@
             // 
             // btnVerMateriasPrimas
             // 
-            this.btnVerMateriasPrimas.Location = new System.Drawing.Point(520, 302);
+            this.btnVerMateriasPrimas.Location = new System.Drawing.Point(474, 269);
             this.btnVerMateriasPrimas.Name = "btnVerMateriasPrimas";
-            this.btnVerMateriasPrimas.Size = new System.Drawing.Size(128, 34);
+            this.btnVerMateriasPrimas.Size = new System.Drawing.Size(148, 80);
             this.btnVerMateriasPrimas.TabIndex = 7;
             this.btnVerMateriasPrimas.Text = "Ver Materias Primas";
             this.btnVerMateriasPrimas.UseVisualStyleBackColor = true;

@@ -36,12 +36,14 @@
             this.txtemail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.chkMayorist = new System.Windows.Forms.CheckBox();
             this.btnListaClientes = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rbMinorista = new System.Windows.Forms.RadioButton();
+            this.rbMayorista = new System.Windows.Forms.RadioButton();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAddCliente
@@ -107,15 +109,6 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "CUIT";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(102, 104);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 20);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "¿Es Mayorista?";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -143,16 +136,6 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Direccion";
             // 
-            // chkMayorist
-            // 
-            this.chkMayorist.AutoSize = true;
-            this.chkMayorist.Location = new System.Drawing.Point(129, 141);
-            this.chkMayorist.Name = "chkMayorist";
-            this.chkMayorist.Size = new System.Drawing.Size(49, 24);
-            this.chkMayorist.TabIndex = 15;
-            this.chkMayorist.Text = "Si";
-            this.chkMayorist.UseVisualStyleBackColor = true;
-            // 
             // btnListaClientes
             // 
             this.btnListaClientes.Location = new System.Drawing.Point(57, 351);
@@ -163,17 +146,49 @@
             this.btnListaClientes.UseVisualStyleBackColor = true;
             this.btnListaClientes.Click += new System.EventHandler(this.btnListaClientes_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rbMayorista);
+            this.groupBox1.Controls.Add(this.rbMinorista);
+            this.groupBox1.Location = new System.Drawing.Point(57, 201);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(257, 107);
+            this.groupBox1.TabIndex = 17;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Tipo de Cliente";
+            // 
+            // rbMinorista
+            // 
+            this.rbMinorista.AutoSize = true;
+            this.rbMinorista.Checked = true;
+            this.rbMinorista.Location = new System.Drawing.Point(88, 35);
+            this.rbMinorista.Name = "rbMinorista";
+            this.rbMinorista.Size = new System.Drawing.Size(98, 24);
+            this.rbMinorista.TabIndex = 18;
+            this.rbMinorista.TabStop = true;
+            this.rbMinorista.Text = "Minorista";
+            this.rbMinorista.UseVisualStyleBackColor = true;
+            // 
+            // rbMayorista
+            // 
+            this.rbMayorista.AutoSize = true;
+            this.rbMayorista.Location = new System.Drawing.Point(88, 74);
+            this.rbMayorista.Name = "rbMayorista";
+            this.rbMayorista.Size = new System.Drawing.Size(102, 24);
+            this.rbMayorista.TabIndex = 19;
+            this.rbMayorista.Text = "Mayorista";
+            this.rbMayorista.UseVisualStyleBackColor = true;
+            // 
             // FormularioCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnListaClientes);
-            this.Controls.Add(this.chkMayorist);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtemail);
@@ -185,6 +200,8 @@
             this.Name = "FormularioCliente";
             this.Text = "FormularioCliente";
             this.Load += new System.EventHandler(this.FormularioCliente_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,11 +217,12 @@
         private System.Windows.Forms.TextBox txtemail;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.CheckBox chkMayorist;
         private System.Windows.Forms.Button btnListaClientes;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton rbMayorista;
+        private System.Windows.Forms.RadioButton rbMinorista;
     }
 }

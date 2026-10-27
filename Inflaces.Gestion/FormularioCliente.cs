@@ -26,7 +26,7 @@ namespace Inflaces.Gestion
             idClienteEditar = cliente.id_cliente;
             txtnombre_completo.Text = cliente.nombre_completo;
             txtcuit.Text = cliente.cuit;
-            chkMayorist.Checked = cliente.tipo_cliente;
+            rbMayorista.Checked = cliente.tipo_cliente;
             txttelefono.Text = cliente.telefono;
             txtemail.Text = cliente.email;
             txtdireccion.Text = cliente.direccion;
@@ -42,7 +42,7 @@ namespace Inflaces.Gestion
                 {
                     nombre_completo = txtnombre_completo.Text,
                     cuit = txtcuit.Text,
-                    tipo_cliente = chkMayorist.Checked, // true si es mayorista, false si es minorista
+                    tipo_cliente = rbMayorista.Checked, // true si es mayorista, false si es minorista
                     telefono = txttelefono.Text,
                     email = txtemail.Text,
                     direccion = txtdireccion.Text
@@ -77,7 +77,7 @@ namespace Inflaces.Gestion
         private void LimpiarCampos() { 
             txtnombre_completo.Clear(); 
             txtcuit.Clear();
-            chkMayorist.Checked = false;
+            rbMayorista.Checked = false;
             txttelefono.Clear();
             txtemail.Clear();
             txtdireccion.Clear(); 
