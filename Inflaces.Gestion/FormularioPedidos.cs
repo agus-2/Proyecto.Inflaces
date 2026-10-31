@@ -33,6 +33,8 @@ namespace Inflaces.Gestion
             {
                 dgvPedidos.DataSource = null;
                 dgvPedidos.DataSource = negocioPedido.ListarPedidos();
+
+                dgvPedidos.Refresh();
             }
             catch(Exception ex)
             {
@@ -44,7 +46,7 @@ namespace Inflaces.Gestion
             {
                 cmbxClientePedido.DataSource = negocioCliente.ListarClientes();
                 cmbxClientePedido.ValueMember = "id_cliente";
-                cmbxClientePedido.DisplayMember = "Nombre Completo";
+                cmbxClientePedido.DisplayMember = "Nombre_Completo";
                 cmbxClientePedido.SelectedIndex = -1;
             }
             catch (Exception ex) {
@@ -62,7 +64,7 @@ namespace Inflaces.Gestion
             try
             {
                 //valida seleccion
-                if (cmbxClientePedido.SelectedValue == null) {
+                if (cmbxClientePedido.SelectedValue == null || Convert.ToInt32(cmbxClientePedido.SelectedValue) <= 0) {
                     MessageBox.Show("Debe seleccionar un cliente para crear el pedido.");
                     return;
                 }
@@ -70,7 +72,7 @@ namespace Inflaces.Gestion
                 Pedidos pedidoEmpaquetado = new Pedidos()
                 {
                     fecha_pedido = dtpPedido.Value,
-                    id_cliente = (int)cmbxClientePedido.SelectedIndex,
+                    id_cliente = (int)cmbxClientePedido.SelectedValue,
                     estado = cmbxEstPedido.SelectedItem.ToString(),
                     total = 0 //inicia en 0 hasta que se carguen productos
                 };
@@ -152,7 +154,7 @@ namespace Inflaces.Gestion
             string respuesta = negocioPedido.ActualizarEstadoPedido(pedidoSeleccionado, nuevoEstado);
             MessageBox.Show(respuesta);
 
-            if (respuesta.StartsWith("Éxito"))
+            if (respuesta.Contains("Éxito"))
             {
                 CargarListaPedidos();
             }

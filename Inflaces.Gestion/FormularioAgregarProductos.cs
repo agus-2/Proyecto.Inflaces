@@ -39,8 +39,8 @@ namespace Inflaces.Gestion
             try {
                 ProductoNegocio negocio = new ProductoNegocio();
                 cboProducto.DataSource = negocio.ListarProductos();
-                cboProducto.ValueMember = "id_producto";
                 cboProducto.DisplayMember = "nombre";
+                cboProducto.ValueMember = "id_producto";
                 cboProducto.SelectedIndex = -1;
             }
             catch (Exception ex)

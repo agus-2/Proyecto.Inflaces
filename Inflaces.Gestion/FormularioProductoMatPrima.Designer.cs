@@ -47,6 +47,7 @@
             this.cmboMatPrima.Name = "cmboMatPrima";
             this.cmboMatPrima.Size = new System.Drawing.Size(238, 28);
             this.cmboMatPrima.TabIndex = 14;
+            this.cmboMatPrima.SelectedIndexChanged += new System.EventHandler(this.cmboMatPrima_SelectedIndexChanged);
             // 
             // cmboProducto
             // 

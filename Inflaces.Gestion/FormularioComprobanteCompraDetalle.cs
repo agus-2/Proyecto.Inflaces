@@ -39,8 +39,8 @@ namespace Inflaces.Gestion
                 //agarra el texto ingresado y lo empaqueta
                 DetalleComprobante detalleEmpaquetado = new DetalleComprobante
                 {
-                    id_materia_prima = (int)cmboMatPrima.SelectedValue,
                     id_comprobante = idDetComproEditar,
+                    id_materia_prima = (int)cmboMatPrima.SelectedValue,
                     cantidad = int.Parse(txtCantidadCompro.Text),
                     precio_unitario = int.Parse(txtPrecioUnitario.Text),
                     subtotal = int.Parse(txtSubtotal.Text),
@@ -76,14 +76,31 @@ namespace Inflaces.Gestion
         private void FormularioComprobanteCompraDetalle_Load(object sender, EventArgs e)
         {
             CargarMatPrima();
+            CargarComprobantes();
             CargarListaDetComp();
+        }
+        private void CargarComprobantes()
+        {
+            try
+            {
+                comboComprobante.DataSource = negocioComprobante.ListarComprobantes();
+
+                comboComprobante.DisplayMember = "numero_comprobante";
+                comboComprobante.ValueMember = "id_comprobante";
+                comboComprobante.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar lista de comprobantes: " + ex.Message);
+            }
         }
         private void CargarMatPrima(){
             try
             {
                 cmboMatPrima.DataSource = negocioMatPrima.ListarMateriasPrimas();
+
+                cmboMatPrima.DisplayMember = "nombre"; 
                 cmboMatPrima.ValueMember = "id_materia_prima";
-                cmboMatPrima.DisplayMember = "Materia Prima";
                 cmboMatPrima.SelectedIndex = -1;
             }
             catch (Exception ex)

@@ -36,8 +36,8 @@ namespace Inflaces.Gestion
             try
             {
                 cmboProducto.DataSource = negocioProducto.ListarProductos();
+                cmboProducto.DisplayMember = "nombre"; 
                 cmboProducto.ValueMember = "id_producto";
-                cmboProducto.DisplayMember = "Producto";
                 cmboProducto.SelectedIndex = -1;
             }
             catch (Exception ex)
@@ -49,10 +49,10 @@ namespace Inflaces.Gestion
         {
             try
             {
-                cmboProducto.DataSource = negocioMatPrima.ListarMateriasPrimas();
-                cmboProducto.ValueMember = "id_materia_prima";
-                cmboProducto.DisplayMember = "Materia Prima";
-                cmboProducto.SelectedIndex = -1;
+                cmboMatPrima.DataSource = negocioMatPrima.ListarMateriasPrimas();
+                cmboMatPrima.DisplayMember = "nombre";
+                cmboMatPrima.ValueMember = "id_materia_prima";
+                cmboMatPrima.SelectedIndex = -1;
             }
             catch (Exception ex)
             {
@@ -132,5 +132,10 @@ namespace Inflaces.Gestion
                 MessageBox.Show("Error al eliminar el ítem: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-       }
+
+        private void cmboMatPrima_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
     }
