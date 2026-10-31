@@ -33,7 +33,7 @@ namespace Inflaces.Gestion
             {
                 cmboProducto.DataSource = negocioProducto.ListarProductos();
                 cmboProducto.ValueMember = "id_producto";
-                cmboProducto.DisplayMember = "Producto";
+                cmboProducto.DisplayMember = "nombre";
                 cmboProducto.SelectedIndex = -1;
             }
             catch (Exception ex)
@@ -46,7 +46,7 @@ namespace Inflaces.Gestion
             {
                 cmboEmpleado.DataSource = negocioEmpleado.ListarEmpleados();
                 cmboEmpleado.ValueMember = "id_empleado";
-                cmboEmpleado.DisplayMember = "Empleado";
+                cmboEmpleado.DisplayMember = "apellido";
                 cmboEmpleado.SelectedIndex = -1;
             } catch (Exception ex)
             {

@@ -85,7 +85,7 @@ namespace Inflaces.Gestion
             {
                 cmboProveedor.DataSource = negocioProveedor.ListarProveedores();
                 cmboProveedor.ValueMember = "id_proveedor";
-                cmboProveedor.DisplayMember = "nombre_proveedor";
+                cmboProveedor.DisplayMember = "nombre_empresa";
                 // O la propiedad que muestre el nombre/razón social
                 cmboProveedor.SelectedIndex = -1;
             }

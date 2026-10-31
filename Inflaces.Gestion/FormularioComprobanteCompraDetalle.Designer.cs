@@ -39,6 +39,8 @@
             this.dgvComprobanteDetalle = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.comboComprobante = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvComprobanteDetalle)).BeginInit();
             this.SuspendLayout();
             // 
@@ -137,11 +139,30 @@
             this.label4.TabIndex = 24;
             this.label4.Text = "Materia Prima";
             // 
+            // comboComprobante
+            // 
+            this.comboComprobante.FormattingEnabled = true;
+            this.comboComprobante.Location = new System.Drawing.Point(32, 355);
+            this.comboComprobante.Name = "comboComprobante";
+            this.comboComprobante.Size = new System.Drawing.Size(228, 28);
+            this.comboComprobante.TabIndex = 25;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(83, 315);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(106, 20);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "Comprobante";
+            // 
             // FormularioComprobanteCompraDetalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1063, 547);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.comboComprobante);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvComprobanteDetalle);
@@ -175,5 +196,7 @@
         private System.Windows.Forms.DataGridView dgvComprobanteDetalle;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboComprobante;
+        private System.Windows.Forms.Label label5;
     }
 }
