@@ -1,0 +1,18 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Compilación
+bin/
+obj/
+
+# Archivos de usuario
+*.user
+*.rsuser
+
+# NuGet
+packages/
+
+# Logs
+*.log
