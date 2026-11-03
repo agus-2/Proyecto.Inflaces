@@ -75,5 +75,11 @@ namespace Inflaces.Gestion
                 CargarMateriasPrimas();
             }
         }
+
+        private void btnMatPrimaProductos_Click(object sender, EventArgs e)
+        {
+            FormularioProductoMatPrima formulario = new FormularioProductoMatPrima();
+            formulario.ShowDialog();
+        }
     }
 }
