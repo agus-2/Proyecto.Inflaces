@@ -37,30 +37,30 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(11, 13);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 302);
+            this.dataGridView1.Size = new System.Drawing.Size(698, 336);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnEliminarEmpleado
             // 
-            this.btnEliminarEmpleado.Location = new System.Drawing.Point(117, 368);
+            this.btnEliminarEmpleado.Location = new System.Drawing.Point(99, 392);
             this.btnEliminarEmpleado.Name = "btnEliminarEmpleado";
-            this.btnEliminarEmpleado.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminarEmpleado.Size = new System.Drawing.Size(148, 57);
             this.btnEliminarEmpleado.TabIndex = 1;
-            this.btnEliminarEmpleado.Text = "EliminarEmpleado";
+            this.btnEliminarEmpleado.Text = "Eliminar Empleado";
             this.btnEliminarEmpleado.UseVisualStyleBackColor = true;
             this.btnEliminarEmpleado.Click += new System.EventHandler(this.btnEliminarEmpleado_Click);
             // 
             // btnModificarEmpleado
             // 
-            this.btnModificarEmpleado.Location = new System.Drawing.Point(569, 368);
+            this.btnModificarEmpleado.Location = new System.Drawing.Point(469, 392);
             this.btnModificarEmpleado.Name = "btnModificarEmpleado";
-            this.btnModificarEmpleado.Size = new System.Drawing.Size(75, 23);
+            this.btnModificarEmpleado.Size = new System.Drawing.Size(140, 61);
             this.btnModificarEmpleado.TabIndex = 2;
             this.btnModificarEmpleado.Text = "Modificar Empleado";
             this.btnModificarEmpleado.UseVisualStyleBackColor = true;
@@ -68,9 +68,9 @@
             // 
             // FormularioListaEmpleados
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(720, 500);
             this.Controls.Add(this.btnModificarEmpleado);
             this.Controls.Add(this.btnEliminarEmpleado);
             this.Controls.Add(this.dataGridView1);

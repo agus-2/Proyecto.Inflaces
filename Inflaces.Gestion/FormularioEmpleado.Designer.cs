@@ -58,7 +58,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(185, 41);
+            this.label2.Location = new System.Drawing.Point(184, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 18);
             this.label2.TabIndex = 1;
@@ -67,7 +67,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(330, 41);
+            this.label3.Location = new System.Drawing.Point(344, 41);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 18);
             this.label3.TabIndex = 2;
@@ -103,7 +103,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(185, 176);
+            this.label7.Location = new System.Drawing.Point(170, 176);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(94, 18);
             this.label7.TabIndex = 6;
@@ -111,14 +111,14 @@
             // 
             // textNombre
             // 
-            this.textNombre.Location = new System.Drawing.Point(57, 100);
+            this.textNombre.Location = new System.Drawing.Point(36, 100);
             this.textNombre.Name = "textNombre";
             this.textNombre.Size = new System.Drawing.Size(100, 25);
             this.textNombre.TabIndex = 7;
             // 
             // textApellido
             // 
-            this.textApellido.Location = new System.Drawing.Point(188, 100);
+            this.textApellido.Location = new System.Drawing.Point(173, 99);
             this.textApellido.Name = "textApellido";
             this.textApellido.Size = new System.Drawing.Size(100, 25);
             this.textApellido.TabIndex = 8;
@@ -132,14 +132,14 @@
             // 
             // textTelefono
             // 
-            this.textTelefono.Location = new System.Drawing.Point(458, 100);
+            this.textTelefono.Location = new System.Drawing.Point(468, 100);
             this.textTelefono.Name = "textTelefono";
             this.textTelefono.Size = new System.Drawing.Size(100, 25);
             this.textTelefono.TabIndex = 10;
             // 
             // textContraseña
             // 
-            this.textContraseña.Location = new System.Drawing.Point(164, 213);
+            this.textContraseña.Location = new System.Drawing.Point(173, 213);
             this.textContraseña.Name = "textContraseña";
             this.textContraseña.PasswordChar = '*';
             this.textContraseña.Size = new System.Drawing.Size(100, 25);
@@ -147,7 +147,7 @@
             // 
             // textUsuario
             // 
-            this.textUsuario.Location = new System.Drawing.Point(35, 213);
+            this.textUsuario.Location = new System.Drawing.Point(36, 213);
             this.textUsuario.Name = "textUsuario";
             this.textUsuario.Size = new System.Drawing.Size(100, 25);
             this.textUsuario.TabIndex = 13;
@@ -156,7 +156,7 @@
             // 
             this.btnAgregarEmpleado.Location = new System.Drawing.Point(188, 344);
             this.btnAgregarEmpleado.Name = "btnAgregarEmpleado";
-            this.btnAgregarEmpleado.Size = new System.Drawing.Size(75, 23);
+            this.btnAgregarEmpleado.Size = new System.Drawing.Size(121, 60);
             this.btnAgregarEmpleado.TabIndex = 14;
             this.btnAgregarEmpleado.Text = "Agregar Empleado";
             this.btnAgregarEmpleado.UseVisualStyleBackColor = true;
@@ -166,7 +166,7 @@
             // 
             this.btnVerEmpleados.Location = new System.Drawing.Point(520, 344);
             this.btnVerEmpleados.Name = "btnVerEmpleados";
-            this.btnVerEmpleados.Size = new System.Drawing.Size(75, 23);
+            this.btnVerEmpleados.Size = new System.Drawing.Size(140, 60);
             this.btnVerEmpleados.TabIndex = 15;
             this.btnVerEmpleados.Text = "Ver Empleados";
             this.btnVerEmpleados.UseVisualStyleBackColor = true;
@@ -175,7 +175,7 @@
             // comboPuesto
             // 
             this.comboPuesto.FormattingEnabled = true;
-            this.comboPuesto.Location = new System.Drawing.Point(615, 99);
+            this.comboPuesto.Location = new System.Drawing.Point(616, 99);
             this.comboPuesto.Name = "comboPuesto";
             this.comboPuesto.Size = new System.Drawing.Size(121, 26);
             this.comboPuesto.TabIndex = 16;

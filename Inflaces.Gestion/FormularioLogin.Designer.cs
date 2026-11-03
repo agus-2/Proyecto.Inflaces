@@ -37,9 +37,9 @@
             // 
             // btnIniciarSesion
             // 
-            this.btnIniciarSesion.Location = new System.Drawing.Point(388, 365);
+            this.btnIniciarSesion.Location = new System.Drawing.Point(308, 285);
             this.btnIniciarSesion.Name = "btnIniciarSesion";
-            this.btnIniciarSesion.Size = new System.Drawing.Size(75, 23);
+            this.btnIniciarSesion.Size = new System.Drawing.Size(151, 58);
             this.btnIniciarSesion.TabIndex = 0;
             this.btnIniciarSesion.Text = "Iniciar Sesión";
             this.btnIniciarSesion.UseVisualStyleBackColor = true;
@@ -48,7 +48,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(605, 112);
+            this.label1.Location = new System.Drawing.Point(530, 124);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 18);
             this.label1.TabIndex = 1;
@@ -57,7 +57,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(116, 112);
+            this.label2.Location = new System.Drawing.Point(158, 124);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 18);
             this.label2.TabIndex = 2;
@@ -65,17 +65,17 @@
             // 
             // textContraseña
             // 
-            this.textContraseña.Location = new System.Drawing.Point(608, 161);
+            this.textContraseña.Location = new System.Drawing.Point(442, 161);
             this.textContraseña.Name = "textContraseña";
             this.textContraseña.PasswordChar = '*';
-            this.textContraseña.Size = new System.Drawing.Size(100, 25);
+            this.textContraseña.Size = new System.Drawing.Size(257, 25);
             this.textContraseña.TabIndex = 3;
             // 
             // textUsuario
             // 
             this.textUsuario.Location = new System.Drawing.Point(68, 161);
             this.textUsuario.Name = "textUsuario";
-            this.textUsuario.Size = new System.Drawing.Size(100, 25);
+            this.textUsuario.Size = new System.Drawing.Size(266, 25);
             this.textUsuario.TabIndex = 4;
             // 
             // FormularioLogin

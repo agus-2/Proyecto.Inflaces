@@ -123,8 +123,8 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Security" />
-    <Reference Include="System.Security.Cryptography.Pkcs, Version=8.0.0.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>packages\System.Security.Cryptography.Pkcs.8.0.1\lib\net462\System.Security.Cryptography.Pkcs.dll</HintPath>
+    <Reference Include="System.Security.Cryptography.Pkcs, Version=8.0.0.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Security.Cryptography.Pkcs.8.0.2\lib\net462\System.Security.Cryptography.Pkcs.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Encodings.Web, Version=10.0.0.3, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Text.Encodings.Web.10.0.3\lib\net462\System.Text.Encodings.Web.dll</HintPath>
@@ -150,7 +150,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormularioComprobanteCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioComprobanteCompra.Designer.cs">
+      <DependentUpon>FormularioComprobanteCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="conet.cs" />
+    <Compile Include="FormularioComprobanteCompraDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioComprobanteCompraDetalle.Designer.cs">
+      <DependentUpon>FormularioComprobanteCompraDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioFabricacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioFabricacion.Designer.cs">
+      <DependentUpon>FormularioFabricacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioAgregarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioAgregarProductos.Designer.cs">
+      <DependentUpon>FormularioAgregarProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +235,18 @@
     <Compile Include="FormularioMenu.Designer.cs">
       <DependentUpon>FormularioMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularioPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioPedidos.Designer.cs">
+      <DependentUpon>FormularioPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioProductoMatPrima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioProductoMatPrima.Designer.cs">
+      <DependentUpon>FormularioProductoMatPrima.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormularioProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,10 +259,28 @@
     <Compile Include="FormularioProveedor.Designer.cs">
       <DependentUpon>FormularioProveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListarFabricacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListarFabricacion.Designer.cs">
+      <DependentUpon>ListarFabricacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormularioAgregarProductos.resx">
+      <DependentUpon>FormularioAgregarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioComprobanteCompra.resx">
+      <DependentUpon>FormularioComprobanteCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioComprobanteCompraDetalle.resx">
+      <DependentUpon>FormularioComprobanteCompraDetalle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormularioEmpleado.resx">
       <DependentUpon>FormularioEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioFabricacion.resx">
+      <DependentUpon>FormularioFabricacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioListaEmpleados.resx">
       <DependentUpon>FormularioListaEmpleados.cs</DependentUpon>
@@ -255,11 +309,20 @@
     <EmbeddedResource Include="FormularioMenu.resx">
       <DependentUpon>FormularioMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormularioPedidos.resx">
+      <DependentUpon>FormularioPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioProductoMatPrima.resx">
+      <DependentUpon>FormularioProductoMatPrima.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormularioProductos.resx">
       <DependentUpon>FormularioProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormularioProveedor.resx">
       <DependentUpon>FormularioProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListarFabricacion.resx">
+      <DependentUpon>ListarFabricacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

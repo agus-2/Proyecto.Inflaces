@@ -46,6 +46,24 @@ namespace Inflaces.Gestion
             FormularioProducto formulario = new FormularioProducto();
             formulario.ShowDialog();
         }
+
+        private void btnPedidos_Click(object sender, EventArgs e)
+        {
+            FormularioPedidos formulario = new FormularioPedidos();
+            formulario.ShowDialog();
+        }
+
+        private void btnFabric_Click(object sender, EventArgs e)
+        {
+            FormularioFabricacion formulario = new FormularioFabricacion();
+            formulario.ShowDialog();
+        }
+
+        private void btnComprobanteCompras_Click(object sender, EventArgs e)
+        {
+            FormularioComprobanteCompra formulario = new FormularioComprobanteCompra();
+            formulario.ShowDialog();
+        }
     }
 }
    

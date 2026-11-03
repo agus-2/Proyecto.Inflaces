@@ -89,5 +89,11 @@ namespace Inflaces.Gestion
                 }
             }
         }
+
+        private void btnMatPrimaProducto_Click(object sender, EventArgs e)
+        {
+            FormularioProductoMatPrima formulario = new FormularioProductoMatPrima();
+            formulario.ShowDialog();
+        }
     }
 }
